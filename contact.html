@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Food Ordering</title>
+        <link rel="stylesheet" href="sty.css">
+    </head>
+    <body>
+       <nav>
+            <ul>
+              <div class="food"><i><b>Foody<span style="color: orange">Mood</span></b></i></div>
+              <b><li><a href="index.html">Home</a></li></b>
+              <b><li><a href="category.html">Categories</a></li></b>
+              <b><li><a href="foodmenu.html">Menu</a></li></b>
+              <b><li><a href="http://localhost/food_order/contact.html">Contact</a><t</li></b>
+              <b><li><a href="http://localhost/food_order/login.html">Login</a></li></b>
+              <b><li><div class="cart"><a href="cart.html">Cart<span id="cartCount"></span></a></div></li></b>
+            </ul>
+        </nav>
+        
+          <main>
+            <section class="contact-section">
+              <div class="contact-info">
+                <h2>Contact Us</h2>
+                <p><strong>Address:</strong> Bhubaneswar, Odisha</p>
+                <p><strong>Phone:</strong> +91 7670840088</p>
+                <p><strong>Email:</strong> foodymood@gmail.com</p>
+              </div>
+        
+              <form id="contactForm" action="contact.php" method="POST">
+                <h3>Send a Message</h3>
+                <input type="text" id="name" name="username" placeholder="Your Name" required />
+                <input type="email" id="email" name="email" placeholder="Your Email" required />
+                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send</button>
+              </form>
+            </section>
+        
+            <section class="map-section">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3790.8774205903485!2d85.81853777508137!3d20.29605861080271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1909d2d5170aa5%3A0xfc580e2b68b33fa8!2sBhubaneswar%2C%20Odisha!5e0!3m2!1sen!2sin!4v1713178240000!5m2!1sen!2sin"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+              </iframe>
+            </section>
+          </main>
+        
+
+
+                   <!-- Footer Section -->
+<footer>
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>Foody<span style="color: orange;">Mood</span></h3>
+        <p>Join Us for exclusive updates and fresh meals <div></div>delivered straight to your doorstep.</p>
+        <div class="footer-social">
+          <div class="social-icons">
+            <a href="#"><img src="images/facebook.jpg" alt="Facebook" /></a>
+            <a href="#"><img src="images/instagram.jpg" alt="Instagram" /></a>
+            <a href="#"><img src="images/linkedin1.jpg" alt="LinkedIn" /></a>
+          </div>
+        </div>  
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="foodmenu.html">Menu</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="contactlink">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="https://www.bbsr.com">Bhubaneswar, Odisha</a></li>
+          <li><a href="tel: 7670840088">+91 7670840088</a></li>
+          <li><a href="mailto:foodymood@gmail.com">foodymood@gmail.com</a></li>
+        </ul>
+      </div>
+  
+      
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span>2025 FoodyMood &nbsp;|&nbsp; All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script src="cart.js"></script>
+  </body>
+  </html>

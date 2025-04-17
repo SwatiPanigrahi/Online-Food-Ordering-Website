@@ -1,0 +1,150 @@
+body{
+  padding: 0;
+  margin: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.food{
+  padding-right: 32%;
+  font-size: 1.5rem;
+  color: brown;
+}
+nav ul{
+  margin: 0;
+  display: flex;
+  background: wheat;
+  justify-content: center;
+  list-style: none;
+  padding: 20px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: orangered;
+  font-size: 1rem;
+  padding: 20px;
+}
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 2rem;
+  background: #fff;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+#contactForm {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+#contactForm h3 {
+  margin-bottom: 1rem;
+}
+
+#contactForm input,
+#contactForm textarea {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+#contactForm button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+#contactForm button:hover {
+  background-color: darkgreen;
+}
+
+.map-section {
+  margin: 2rem;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 20px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-container > div {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+  }
+  .footer-links h4{
+    padding: 0 30%;
+  }
+  .footer-links ul {
+    list-style: none;
+    padding: 0 30%;
+  }
+  
+  .footer-links ul li {
+    margin: 8px 0;
+  }
+  
+  .footer-links ul li a {
+    color: #bbb;
+    text-decoration: none;
+  }
+  
+  .footer-links ul li a:hover {
+    color: #fff;
+  }
+  .contactlink h4{
+    padding: 0 10%;
+  }
+  .contactlink ul {
+    list-style: none;
+    padding: 0 10%;
+  }
+  
+  .contactlink ul li {
+    margin: 8px 0;
+  }
+  
+  .contactlink ul li a {
+    color: #bbb;
+    text-decoration: none;
+  }
+  
+  .contactlink ul li a:hover {
+    color: #fff;
+  }
+  .footer-social .social-icons a {
+    margin-right: 10px;
+  }
+  
+  .footer-social img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    font-size: 14px;
+    color: #aaa;
+  }

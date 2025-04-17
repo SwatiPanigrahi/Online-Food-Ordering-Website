@@ -1,0 +1,37 @@
+
+    body {
+      font-family: Arial;
+      background-color: #f4f4f4;
+      padding: 50px;
+    }
+    form {
+      background-color: #fff;
+      max-width: 400px;
+      margin: auto;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 10px;
+      margin-top: 15px;
+      width: 100%;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    .message {
+      text-align: center;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+ 

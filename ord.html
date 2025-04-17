@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Place Order</title>
+  <style>
+    body {
+      font-family: Arial;
+      background-image: url(images/bg1.jpg);
+      padding: 50px;
+    }
+    form {
+      background-color: rgba(255,255,255,0.8);
+      max-width: 400px;
+      margin: auto;
+      padding: 55px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 10px;
+      margin-top: 15px;
+      width: 105%;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    .message {
+      text-align: center;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <form method="POST" action="ord.php">
+    <h2 style="text-align: center;">Place Your Order</h2>
+    <input type="text" name="customer_name" placeholder="Your Name" required>
+    <input type="text" name="address" placeholder="Address" required>
+    <input type="text" name="contact" placeholder="Contact" required>
+    <input type="number" name="quantity" placeholder="Quantity" required>
+    <button type="submit">Place Order</button>
+  <?php if (!empty($orderMessage)): ?>
+    <div class="message"><?php echo $orderMessage; ?></div>
+  <?php endif; ?>
+</form>
+
+</body>
+</html>

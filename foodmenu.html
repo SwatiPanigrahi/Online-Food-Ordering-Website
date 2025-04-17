@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Food Ordering</title>
+        <link rel="stylesheet" href="fm.css">
+    </head>
+    <body>
+       <nav>
+            <ul>
+              <div class="food"><i><b>Foody<span style="color: orange">Mood</span></b></i></div>
+              <b><li><a href="index.html">Home</a></li></b>
+              <b><li><a href="category.html">Categories</a></li></b>
+              <b><li><a href="foodmenu.html">Menu</a></li></b>
+              <b><li><a href="http://localhost/food_order/contact.html">Contact</a><t</li></b>
+              <b><li><a href="http://localhost/food_order/login.html">Login</a></li></b>
+              <b><li><div class="cart"><a href="cart.html">Cart<span id="cartCount"></span></a></div></li></b>
+            </ul>
+        </nav>
+
+<!--Food Menu-->
+
+<main>
+  <section class="menu-section">
+    <h2>Our Menu</h2>
+    <div class="heading"></div>
+    <br>
+    <div class="filters">
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="kebab">Kebabs</button>
+      <button class="filter-btn" data-category="pasta">Pastas and Chinese</button>
+      <button class="filter-btn" data-category="fried">Fried Foods</button>
+      <button class="filter-btn" data-category="Chaat">Chaat</button>
+      <button class="filter-btn" data-category="soups">Soups</button>
+      <button class="filter-btn" data-category="momo">Momos</button>
+      <button class="filter-btn" data-category="bf">Breakfast</button>
+      <button class="filter-btn" data-category="main">Main Course</button>
+      <button class="filter-btn" data-category="pizza">Pizza & Burgers</button>
+      <button class="filter-btn" data-category="sweet">Desserts</button>
+      <button class="filter-btn" data-category="drinks">Drinks</button>
+    </div>
+
+
+    <div class="menu-items">
+       <!-----------Kebabs---------------->
+       <div class="menu-card" data-category="kebab">
+        <img src="images/st1.jpg" alt="Soup">
+        <h3>Potato Kebab</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(1)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="kebab">
+        <img src="images/pt.jpg" alt="Soup">
+        <h3>Paneer Tikka</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(2)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="kebab">
+        <img src="images/mt.jpg" alt="Soup">
+        <h3>Mushrrom Tikka</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(3)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="kebab">
+        <img src="images/ct.jpg" alt="Soup">
+        <h3>Chicken Kebab</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(4)">Add to Cart</button>
+      </div>
+<!------------Pasta---------------->
+      <div class="menu-card" data-category="pasta">
+        <img src="images/pasta.jpg" alt="Soup">
+        <h3>Pink Sauce Pasta</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(5)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="pasta">
+        <img src="images/mr1.jpg" alt="Soup">
+        <h3>Manchurian Roll</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(6)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="pasta">
+        <img src="images/ic1.jpg" alt="Soup">
+        <h3>Baby Corn Chilli</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(7)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="pasta">
+        <img src="images/mr2.jpg" alt="Soup">
+        <h3>Mushroom Chilli</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(8)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="pasta">
+        <img src="images/mr3.jpg" alt="Soup">
+        <h3>Chicken Chilli</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(9)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="pasta">
+        <img src="images/mr5.jpg" alt="Soup">
+        <h3>Red Sauce Pasta</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(10)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="pasta">
+        <img src="images/mr6.jpg" alt="Soup">
+        <h3>White Sauce Pasta</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(11)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="pasta">
+        <img src="images/manchur.jpg" alt="Soup">
+        <h3>Manchurian</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(12)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="pasta">
+        <img src="images/ic4.jpg" alt="Soup">
+        <h3>Spring Rolls</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(13)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="pasta">
+        <img src="images/mr7.jpg" alt="Soup">
+        <h3>Chowmein Roll</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(14)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="pasta">
+        <img src="images/mr8.jpg" alt="Soup">
+        <h3>Chicken Roll</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(15)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="pasta">
+        <img src="images/mr9.jpg" alt="Soup">
+        <h3>Paneer Roll</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(16)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="pasta">
+        <img src="images/mr10.jpg" alt="Soup">
+        <h3>Paneer Chilli</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(17)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="pasta">
+        <img src="images/mr11.jpg" alt="Soup">
+        <h3>Plain Pasta</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(18)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="pasta">
+        <img src="images/ic5.jpg" alt="Soup">
+        <h3>Chicken Lollipop</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(19)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="pasta">
+        <img src="images/ic6.jpg" alt="Soup">
+        <h3>Prawn Chilli</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(20)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="pasta">
+        <img src="images/mr12.jpg" alt="Soup">
+        <h3>Veg Chowmein</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(21)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="pasta">
+        <img src="images/noodles.jpg" alt="Soup">
+        <h3>Plain Chowmein</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(22)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="pasta">
+        <img src="images/m13.jpg" alt="Soup">
+        <h3>Hakka Noodles</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(23)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="pasta">
+        <img src="images/mr14.jpg" alt="Soup">
+        <h3>Chicken Chowmein</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(24)">Add to Cart</button>
+      </div>
+      <!-----------Fried foods-------------->
+      <div class="menu-card" data-category="fried">
+        <img src="images/st4.jpg" alt="Pizza">
+        <h3>French Fries</h3>
+        <p>Classic cheese pizza with basil</p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(25)">Add to Cart</button>
+      </div>
+
+      <div class="menu-card" data-category="fried">
+        <img src="images/st77.jpg" >
+        <h3>Chicken Pakoda</h3>
+        <p>Moist and rich chocolate layered cake</p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(26)">Add to Cart</button>
+      </div>
+
+      <div class="menu-card" data-category="fried">
+        <img src="images/st5.jpg" >
+        <h3>Vegetable Pakoda</h3>
+        <p>Grilled veg patty with fresh veggies</p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(27)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="fried">
+        <img src="images/st10.jpg" >
+        <h3>Vada Pav</h3>
+        <p>Grilled veg patty with fresh veggies</p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(28)">Add to Cart</button>
+      </div>
+
+      <div class="menu-card" data-category="fried">
+        <img src="images/st7.jpg" alt="Fries">
+        <h3>Samosa</h3>
+        <p>Yummy Delights</p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(29)">Add to Cart</button>
+      </div>
+      <!-----------Chaat-------------->
+      <div class="menu-card" data-category="Chaat">
+        <img src="images/st3.jpg">
+        <h3>Gupchup</h3>
+        <p>Yummy Delights</p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(30)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="Chaat">
+        <img src="images/st2.jpg">
+        <h3>Corn Chaat</h3>
+        <p>Yummy Delights</p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(31)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="Chaat">
+        <img src="images/papdi.jpg">
+        <h3>Papdi Chaat</h3>
+        <p>Yummy Delights</p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(32)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="Chaat">
+        <img src="images/sandwich.jpg">
+        <h3>Dahi Bhalla</h3>
+        <p>Yummy Delights</p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(33)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="Chaat">
+        <img src="images/st8.jpg">
+        <h3>Mix Fruit Chaat</h3>
+        <p>Yummy Delights</p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(34)">Add to Cart</button>
+      </div>
+      <!-------soups---------->
+      <div class="menu-card" data-category="soups">
+        <img src="images/soup2.jpg" alt="Soup">
+        <h3>Tomato Soup</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(35)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="soups">
+        <img src="images/soup1.jpg" alt="Soup">
+        <h3>Palak Soup</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(36)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="soups">
+        <img src="images/soup3.jpg" alt="Soup">
+        <h3>Lentil Soup</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(37)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="soups">
+        <img src="images/soup4.jpg" alt="Soup">
+        <h3>Mix Veg Soup</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(38)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="soups">
+        <img src="images/soup5.jpg" alt="Soup">
+        <h3>Chickpea Soup</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(39)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="soups">
+        <img src="images/soup6.jpg" alt="Soup">
+        <h3>Non veg Soup</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(40)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="soups">
+        <img src="images/soup7.jpg" alt="Soup">
+        <h3>Manchow Soup</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(41)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="soups">
+        <img src="images/soup8.jpg" alt="Soup">
+        <h3>Corn Soup</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(42)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="soups">
+        <img src="images/soup10.jpg" alt="Soup">
+        <h3>Veg Creamy Soup</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(43)">Add to Cart</button>
+      </div>
+       <!--------Momos--------->
+       <div class="menu-card" data-category="momo">
+        <img src="images/lp.jpg">
+        <h3>Steamed Veg Momo</h3>
+        <p>Yummy Delights</p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(44)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="momo">
+        <img src="images/st6.jpg">
+        <h3>Steamed Chicken Momo</h3>
+        <p>Yummy Delights</p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(45)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="momo">
+        <img src="images/fmo.jpg">
+        <h3>Fried Chicken Momo</h3>
+        <p>Yummy Delights</p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(46)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="momo">
+        <img src="images/kmo.jpg">
+        <h3>Kurkure Veg Momo</h3>
+        <p>Yummy Delights</p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(47)">Add to Cart</button>
+      </div>
+      
+      <div class="menu-card" data-category="momo">
+        <img src="images/mmo.jpg">
+        <h3>Malai Tandoori Momo</h3>
+        <p>Yummy Delights</p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(48)">Add to Cart</button>
+      </div>
+       <!--------breakfast-------->
+    <div class="menu-card" data-category="bf">
+      <img src="images/m12.jpg" alt="Soup">
+      <h3>Chole Bhature</h3>
+      <p>Yummy Delights </p>
+      <span>₹100</span>
+      <br>
+      <br>
+      <button onclick="addToCart(49)">Add to Cart</button>
+    </div>
+    <div class="menu-card" data-category="bf">
+      <img src="images/south8.jpg" alt="Soup">
+      <h3>Appam</h3>
+      <p>Yummy Delights </p>
+      <span>₹100</span>
+      <br>
+      <br>
+      <button onclick="addToCart(50)">Add to Cart</button>
+    </div>
+    <div class="menu-card" data-category="bf">
+      <img src="images/south2.jpg" alt="Soup">
+      <h3>Masala Dosa</h3>
+      <p>Yummy Delights </p>
+      <span>₹100</span>
+      <br>
+      <br>
+      <button onclick="addToCart(51)">Add to Cart</button>
+    </div>
+    <div class="menu-card" data-category="bf">
+      <img src="images/eggd.jpg" alt="Soup">
+      <h3>Egg Dosa</h3>
+      <p>Yummy Delights </p>
+      <span>₹100</span>
+      <br>
+      <br>
+      <button onclick="addToCart(52)">Add to Cart</button>
+    </div>
+    <div class="menu-card" data-category="bf">
+      <img src="images/egd.jpg" alt="Soup">
+      <h3>Rava Dosa</h3>
+      <p>Yummy Delights </p>
+      <span>₹100</span>
+      <br>
+      <br>
+      <button onclick="addToCart(53)">Add to Cart</button>
+    </div>
+    <div class="menu-card" data-category="bf">
+      <img src="images/south1.jpg" alt="Soup">
+      <h3>Idli Sambar</h3>
+      <p>Yummy Delights </p>
+      <span>₹100</span>
+      <br>
+      <br>
+      <button onclick="addToCart(54)">Add to Cart</button>
+    </div>
+    <div class="menu-card" data-category="bf">
+      <img src="images/south5.jpg" alt="Soup">
+      <h3>Pongal</h3>
+      <p>Yummy Delights </p>
+      <span>₹100</span>
+      <br>
+      <br>
+      <button onclick="addToCart(55)">Add to Cart</button>
+    </div>
+    <div class="menu-card" data-category="bf">
+      <img src="images/south6.jpg" alt="Soup">
+      <h3>Uttappam</h3>
+      <p>Yummy Delights </p>
+      <span>₹100</span>
+      <br>
+      <br>
+      <button onclick="addToCart(56)">Add to Cart</button>
+    </div>
+    <div class="menu-card" data-category="bf">
+      <img src="images/south7.jpg" alt="Soup">
+      <h3>Pallappam</h3>
+      <p>Yummy Delights </p>
+      <span>₹100</span>
+      <br>
+      <br>
+      <button onclick="addToCart(57)">Add to Cart</button>
+    </div>
+    <div class="menu-card" data-category="bf">
+      <img src="images/south9.jpg" alt="Soup">
+      <h3>Upma</h3>
+      <p>Yummy Delights </p>
+      <span>₹100</span>
+      <br>
+      <br>
+      <button onclick="addToCart(58)">Add to Cart</button>
+    </div>
+    <div class="menu-card" data-category="bf">
+      <img src="images/south3.jpg" alt="Soup">
+      <h3>Medu Vada</h3>
+      <p>Yummy Delights </p>
+      <span>₹100</span>
+      <br>
+      <br>
+      <button onclick="addToCart(59)">Add to Cart</button>
+    </div>
+    <div class="menu-card" data-category="bf">
+      <img src="images/sandwich1.jpg" alt="Soup">
+      <h3>Veg Sandwich</h3>
+      <p>Yummy Delights </p>
+      <span>₹100</span>
+      <br>
+      <br>
+      <button onclick="addToCart(60)">Add to Cart</button>
+    </div>
+    <div class="menu-card" data-category="bf">
+      <img src="images/bb3.jpg" alt="Soup">
+      <h3>Chicken Sandwich</h3>
+      <p>Yummy Delights </p>
+      <span>₹100</span>
+      <br>
+      <br>
+      <button onclick="addToCart(61)">Add to Cart</button>
+    </div>
+    <div class="menu-card" data-category="bf">
+      <img src="images/bb7.jpg" alt="Soup">
+      <h3>French Toast</h3>
+      <p>Yummy Delights </p>
+      <span>₹100</span>
+      <br>
+      <br>
+      <button onclick="addToCart(62)">Add to Cart</button>
+    </div>
+    
+      <!--------Main----------->
+      <div class="menu-card" data-category="main">
+        <img src="images/m1.jpg">
+        <h3>Pakhala Bhata</h3>
+        <p>Yummy Delights</p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(63)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="main">
+        <img src="images/m2.jpg">
+        <h3>Plain Rice and Dal</h3>
+        <p>Yummy Delights</p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(64)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="main">
+        <img src="images/je.jpg">
+        <h3>Jeera Rice</h3>
+        <p>Yummy Delights</p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(65)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="main">
+        <img src="images/m3.jpg">
+        <h3>Dal Fry</h3>
+        <p>Yummy Delights</p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(66)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="main">
+        <img src="images/cb.jpg">
+        <h3>Chicken Biryani</h3>
+        <p>Yummy Delights</p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(67)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="main">
+        <img src="images/m5.jpg">
+        <h3>Veg Biryani</h3>
+        <p>Yummy Delights</p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(68)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="main">
+        <img src="images/m9.jpg">
+        <h3>Butter Roti</h3>
+        <p>Yummy Delights</p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(69)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="main">
+        <img src="images/m13.jpg">
+        <h3>Tandoori Naan</h3>
+        <p>Yummy Delights</p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(70)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="main">
+        <img src="images/pizza.jpg">
+        <h3>Kadhai Paneer</h3>
+        <p>Yummy Delights</p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(71)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="main">
+        <img src="images/m14.jpg">
+        <h3>Mushroom Sukka</h3>
+        <p>Yummy Delights</p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(72)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="main">
+        <img src="images/m8.jpg">
+        <h3>Chicken Masala</h3>
+        <p>Yummy Delights</p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(73)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="main">
+        <img src="images/m11.jpg">
+        <h3>Egg Curry</h3>
+        <p>Yummy Delights</p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(74)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="main">
+        <img src="images/la.jpg">
+        <h3>Lachha Paratha</h3>
+        <p>Yummy Delights</p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(75)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="main">
+        <img src="images/pan.jpg">
+        <h3>Paneer Paratha</h3>
+        <p>Yummy Delights</p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(76)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="main">
+        <img src="images/m10.jpg">
+        <h3>Aloo Paratha</h3>
+        <p>Yummy Delights</p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(77)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="main">
+        <img src="images/m16.jpg">
+        <h3>Masala Kulcha</h3>
+        <p>Yummy Delights</p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(78)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="main">
+        <img src="images/m19.jpg">
+        <h3>Fried Fish</h3>
+        <p>Yummy Delights</p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(79)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="main">
+        <img src="images/m20.jpg">
+        <h3>Navratna Korma</h3>
+        <p>Yummy Delights</p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(80)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="main">
+        <img src="images/m18.jpg">
+        <h3>Malai Prawn</h3>
+        <p>Yummy Delights</p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(81)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="main">
+        <img src="images/south4.jpg">
+        <h3>Rasam Rice</h3>
+        <p>Yummy Delights</p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(82)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="main">
+        <img src="images/m15.jpg">
+        <h3>Paneer Kofta</h3>
+        <p>Yummy Delights</p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(83)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="main">
+        <img src="images/m17.jpg">
+        <h3>Baigan Masala</h3>
+        <p>Yummy Delights</p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(84)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="main">
+        <img src="images/aloo.jpg">
+        <h3>Aloo Gobhi</h3>
+        <p>Yummy Delights</p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(85)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="main">
+        <img src="images/veg.jpg">
+        <h3>Veg Thali</h3>
+        <p>Yummy Delights</p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(86)">Add to Cart</button>
+      </div>
+       <!----------pizza------------>
+       <div class="menu-card" data-category="pizza">
+        <img src="images/p1.jpg" alt="Soup">
+        <h3>Margherita Pizza</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(87)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="pizza">
+        <img src="images/bb4.jpg" alt="Soup">
+        <h3>Garlic Bread</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(88)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="pizza">
+        <img src="images/bb1.jpg" alt="Soup">
+        <h3>Chicken Pizza</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(89)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="pizza">
+        <img src="images/p2.jpg" alt="Soup">
+        <h3>Paneeer Mushroom Pizza</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(90)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="pizza">
+        <img src="images/bur2.jpg" alt="Soup">
+        <h3>Cheese Burger</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(91)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="pizza">
+        <img src="images/p3.jpg" alt="Soup">
+        <h3>Pepperoni Pizza</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(92)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="pizza">
+        <img src="images/bur1.jpg" alt="Soup">
+        <h3>Aloo Patty Burger</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(93)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="pizza">
+        <img src="images/burger.jpg" alt="Soup">
+        <h3>Chicken Burger</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(94)">Add to Cart</button>
+      </div>
+      <!-------Sweets----------->
+      <div class="menu-card" data-category="sweet">
+        <img src="images/bs5.jpg" alt="Soup">
+        <h3>Gulab Jamun</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(95)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="sweet">
+        <img src="images/bs10.jpg" alt="Soup">
+        <h3>Sweet Curd</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(96)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="sweet">
+        <img src="images/bs2.jpg" alt="Soup">
+        <h3>Pineapple Cassata</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(97)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="sweet">
+        <img src="images/bs8.jpg" alt="Soup">
+        <h3>Strawberry Mousse</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(98)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="sweet">
+        <img src="images/sw1.jpg" alt="Soup">
+        <h3>Seviyan Kheer</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(99)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="sweet">
+        <img src="images/bss.jpg" alt="Soup">
+        <h3>Kheer</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(100)">Add to Cart</button>
+      </div><div class="menu-card" data-category="sweet">
+        <img src="images/sw2.jpg" alt="Soup">
+        <h3>Dark Chocolate</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(101)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="sweet">
+        <img src="images/bs6.jpg" alt="Soup">
+        <h3>Milk Chocolate</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(102)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="sweet">
+        <img src="images/bs3.jpg" alt="Soup">
+        <h3>Fruit Custard</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(103)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="sweet">
+        <img src="images/south10.jpg" alt="Soup">
+        <h3>Payassam</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(104)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="sweet">
+        <img src="images/sw3.jpg" alt="Soup">
+        <h3>Butterscotch Pastry</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(105)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="sweet">
+        <img src="images/sw4.jpg" alt="Soup">
+        <h3>Rasgulla</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(106)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="sweet">
+        <img src="images/bs9.jpg" alt="Soup">
+        <h3>Chhena Poda</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(107)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="sweet">
+        <img src="images/bs1.jpg" alt="Soup">
+        <h3>Chocolate Pastry</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(108)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="sweet">
+        <img src="images/bs7.jpg" alt="Soup">
+        <h3>Jalebi</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(109)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="sweet">
+        <img src="images/sw5.jpg" alt="Soup">
+        <h3>Mangobar</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(110)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="sweet">
+        <img src="images/burger1.jpg" alt="Soup">
+        <h3>Strawberry Icecream</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(111)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="sweet">
+        <img src="images/sw6.jpg" alt="Soup">
+        <h3>Kesar Pista Kulfi</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(112)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="sweet">
+        <img src="images/bb8.jpg" alt="Soup">
+        <h3>Choco-filled Buns</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(113)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="sweet">
+        <img src="images/bb10.jpg" alt="Soup">
+        <h3>Bread Pudding</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(114)">Add to Cart</button>
+      </div>
+     
+     
+      <!---------drinks--------->
+      <div class="menu-card" data-category="drinks">
+        <img src="images/d1.jpg" alt="Soup">
+        <h3>Cold Coffee</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(115)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="drinks">
+        <img src="images/dd1.jpg" alt="Soup">
+        <h3>Dalgona Coffee</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(116)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="drinks">
+        <img src="images/dd2.jpg" alt="Soup">
+        <h3>Herbal Tea</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(117)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="drinks">
+        <img src="images/d7.jpg" alt="Soup">
+        <h3>Elaichi Milk Tea</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(118)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="drinks">
+        <img src="images/d6.jpg" alt="Soup">
+        <h3>Cappuccino</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(119)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="drinks">
+        <img src="images/dd3.jpg" alt="Soup">
+        <h3>Chocolate Coffee</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(120)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="drinks">
+        <img src="images/dd4.jpg" alt="Soup">
+        <h3>Oreo Kitkat Shake</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(121)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="drinks">
+        <img src="images/d10.jpg" alt="Soup">
+        <h3>Buttermilk</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(122)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="drinks">
+        <img src="images/d9.jpg" alt="Soup">
+        <h3>Green Juice</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(123)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="drinks">
+        <img src="images/d5.jpg" alt="Soup">
+        <h3>Mix Fruit Juice</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(124)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="drinks">
+        <img src="images/dd5.jpg" alt="Soup">
+        <h3>ABC Juice</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(125)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="drinks">
+        <img src="images/d8.jpg" alt="Soup">
+        <h3>Lemonade</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(126)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="drinks">
+        <img src="images/dd8.jpg" alt="Soup">
+        <h3>Banana Milk Shake</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(127)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="drinks">
+        <img src="images/dd9.jpg" alt="Soup">
+        <h3>Strawberry Milk Shake</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(128)">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-category="drinks">
+        <img src="images/dd7.jpg" alt="Soup">
+        <h3>Lassi</h3>
+        <p>Yummy Delights </p>
+        <span>₹100</span>
+        <br>
+        <br>
+        <button onclick="addToCart(129)">Add to Cart</button>
+      </div>
+     
+
+     
+    </div>
+    
+  </section>
+</main>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>Foody<span style="color: orange;">Mood</span></h3>
+        <p>Join Us for exclusive updates and fresh meals <div></div>delivered straight to your doorstep.</p>
+        <div class="footer-social">
+          <div class="social-icons">
+            <a href="#"><img src="images/facebook.jpg" alt="Facebook" /></a>
+            <a href="#"><img src="images/instagram.jpg" alt="Instagram" /></a>
+            <a href="#"><img src="images/linkedin1.jpg" alt="LinkedIn" /></a>
+          </div>
+        </div>  
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="foodmenu.html">Menu</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="contactlink">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="https://www.bbsr.com">Bhubaneswar, Odisha</a></li>
+          <li><a href="tel: 7670840088">+91 7670840088</a></li>
+          <li><a href="mailto:foodymood@gmail.com">foodymood@gmail.com</a></li>
+        </ul>
+      </div>
+  
+      
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span>2025 FoodyMood &nbsp;|&nbsp; All Rights Reserved.</p>
+    </div>
+    <script>
+const filterButtons = document.querySelectorAll('.filter-btn');
+const menuCards = document.querySelectorAll('.menu-card');
+
+filterButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    // Remove active class from all
+    filterButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    const category = btn.getAttribute('data-category');
+
+    menuCards.forEach(card => {
+      const cardCategory = card.getAttribute('data-category');
+
+      if (category === 'all' || cardCategory === category) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+});
+    </script>
+  </footer>
+  <script src="add.js"></script>
+</body>
+</html>
